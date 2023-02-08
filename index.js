@@ -37,6 +37,10 @@ app.post('/upload', upload.single('photo'), (req, res) => {
   })
 })
 
+app.get('/photos', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
